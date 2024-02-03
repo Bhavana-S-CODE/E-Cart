@@ -1,0 +1,213 @@
+
+
+        body {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            background: linear-gradient(to right bottom, #873572, black);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+
+        a {
+            display: inline-block;
+            color: lightgrey;
+            font-size: 16px;
+            font-family: "Roboto", sans-serif;
+            white-space: nowrap;
+            padding: 12px;
+            border: 1px solid white;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.15s ease-in-out;
+        }
+
+        a:hover {
+            background: rgba(0, 0, 0, 0.23);
+            color: white;
+            transform: scale(1.03);
+            text-decoration: none;
+        }
+
+        a:active {
+            transform: scale(0.98);
+        }
+        #mainImage {
+            margin-top: 20px;
+            margin-left: 40px;
+            height: 440px;
+            
+            margin-bottom: -50px;
+        }
+        
+        .thumbnail {
+            margin-left: -20px;
+            height: 160px;
+            margin-bottom: -650px;
+
+        }
+        
+        .image-container1,
+        .image-container2,
+        .image-container3,
+        .image-container4 {
+            margin-top: 20px; /* Adjusted margin */
+            margin-left: 40px; /* Adjusted margin */
+        }
+        
+        .selected-thumbnail {
+            border: 2px solid #007bff; /* Blue border for selected thumbnail */
+        }
+
+        .container {
+            margin-top: 200px;
+            margin-left: 40px;
+        }
+
+        .image-container1 {
+            margin-top: 500px;
+            margin-left: -340px;
+        }
+
+        .image-container2 {
+            margin-top: 500px;
+            margin-left: 20px;
+        }
+
+        .image-container3 {
+            margin-top: 500px;
+            margin-left: 20px;
+        }
+
+        .image-container4 {
+            margin-top: 500px;
+            margin-left: 20px;
+        }
+
+        .vendor-name {
+            margin-top: 20px;
+            margin-left: 40px;
+            font-weight: lighter;
+            color: gray;
+        }
+        .container {
+            position: relative;
+        }
+
+        .discount {
+           background-color: black;
+            top: 0;
+            right: 50px;
+            font-size:medium;
+           
+            color: #ffffff; /* White text color */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .name {
+            color: beige;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .ab {
+            font-size: 20px;
+            color: white;
+            margin-left: 10px;
+        }
+
+        /* Additional styling for the color selector */
+        .color-selector {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .color-option {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #000;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: border-width 0.2s ease;
+        }
+
+        .color-option.selected {
+            background-color: initial;
+            border-color: yellow;
+            border-radius: 4px;
+            border-width: 6px;
+            padding: 2px;
+        }.size-selector label {
+            display: inline-block;
+            margin-right: 5px;
+            background-color: grey; /* Light grey background */
+            padding: 2px;
+            border-radius: 5px;
+            font-size: medium;
+            color: #000;
+        }
+
+        .size-selector input[type="radio"] {
+            -ms-transform: scale(1.5); /* IE */
+            -moz-transform: scale(1.5); /* FF */
+            -webkit-transform: scale(1.5); /* Safari and Chrome */
+            -o-transform: scale(1.5); /* Opera */
+            transform: scale(1.5); /* General */
+        }
+        .wrapper{
+            height: 40px;
+            width: 120px;
+            background-color: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+
+        .wrapper span{
+            width: 40%;
+          
+            text-align: center;
+            font-size: 55px;
+            font-weight: 600;
+            cursor: pointer;
+            color: gray;
+        }
+
+        .wrapper span.num{
+            font-size: 30px;
+            border-right: 2px solid rgba(0, 0, 0, 0.2);
+            border-left: 2px solid rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+            color: black;
+        }
+        .btnn {
+            border-radius: 12px;
+            background-color: green;
+            width: 140px;
+            height: 50px;
+            margin-left: 180px; /* Added margin to separate from the increment button */
+            margin-top: -43px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+        /* Adjusted the positioning of the "Add to Cart" button */
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        
+       
+      
+
+        

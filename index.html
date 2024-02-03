@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+
+</head>
+
+<body>
+
+    <div id="mainImageContainer">
+        <img id="mainImage" src="https://images.bestsellerclothing.in/data/vero-moda/28-09-2022/160991401_g0.jpg?width=488&height=650&mode=fill&fill=blur&format=auto&dpr=1.2" alt="Main Image">
+    </div>
+   
+
+
+    <div id="thumbnailContainer">
+        <!-- Thumbnail Images -->
+        <img class="thumbnail" src="https://images.bestsellerclothing.in/data/vero-moda/28-09-2022/160991401_g1.jpg?width=300&height=400&mode=fill&fill=blur&format=auto&dpr=1.2"  alt="Thumbnail 1" onclick="changeMainImage(this)">
+        <img class="thumbnail" src="https://images.bestsellerclothing.in/data/vero-moda/28-09-2022/160991401_g2.jpg?width=300&height=400&mode=fill&fill=blur&format=auto&dpr=1.2" alt="Thumbnail 2" onclick="changeMainImage(this)">
+        <img class="thumbnail" src="https://images.bestsellerclothing.in/data/vero-moda/28-09-2022/160991401_g3.jpg?width=300&height=400&mode=fill&fill=blur&format=auto&dpr=1.2" alt="Thumbnail 3" onclick="changeMainImage(this)">
+        <img class="thumbnail" src="https://images.bestsellerclothing.in/data/vero-moda/28-09-2022/160991401_g4.jpg?width=300&height=400&mode=fill&fill=blur&format=auto&dpr=1.2" alt="Thumbnail 4" onclick="changeMainImage(this)">
+        <!-- Add more thumbnails as needed -->
+    </div>
+    
+    <div class="vendor-name">E-Cart</div><br>
+    <div class="name">MARQUEE HOT PINK TAILORED BLAZER DRESS
+        
+        <p style="color:beige; font-size: 25px;font-weight: bold;">$1399.00 <span class="discount" >40% Off</span></p>
+        <p style="text-decoration: line-through;font-weight: lighter; margin-top:-20px;color: rgb(16, 107, 152);">$2331.67</p>
+        <p style="font-weight: lighter;color: gray;">
+            Choose a Color
+        </p>
+        <div class="color-selector">
+            <div class="color-option" style="background-color: #ff5733;" onclick="setColor(this, '#ff5733')"></div>
+            <div class="color-option" style="background-color: #33ff57;" onclick="setColor(this, '#33ff57')"></div>
+            <div class="color-option" style="background-color: #5733ff;" onclick="setColor(this, '#5733ff')"></div>
+            <div class="color-option" style="background-color: #ff33e6;" onclick="setColor(this, '#ff33e6')"></div>
+        </div>
+
+        <p style="font-weight: lighter;color: gray;">
+            Choose a Size
+        </p>
+
+        <div class="size-selector">
+            <input type="radio" name="size" value="small" id="sizeSmall">
+            <label for="sizeSmall">Small</label>
+            
+            <input type="radio" name="size" value="medium" id="sizeMedium">
+            <label for="sizeMedium">Medium</label>
+            
+            <input type="radio" name="size" value="large" id="sizeLarge">
+            <label for="sizeLarge">Large</label>
+            
+            <input type="radio" name="size" value="extra-large" id="sizeExtraLarge">
+            <label for="sizeExtraLarge">Extra Large</label>
+            
+            <input type="radio" name="size" value="xxl" id="sizeXXL">
+            <label for="sizeXXL">XXL</label>
+        </div><br>
+
+        <div class="wrapper">
+            <span class="minus" >-</span>
+            <span class="num">1</span>
+            <span class="plus">+</span>
+            
+            
+        </div>
+        <div>
+            <button class="btnn" onclick="addToCart()">Add to Cart</button>
+            <p id="selectedColorLabel"></p>
+            <p id="selectedSizeLabel"></p>
+        </div>
+
+        <div id="selectedSizeLabel"></div>
+   
+
+    <div>
+        <pre style="font-size: large;font-family: 'Times New Roman', Times, serif; text-align: left;font-weight: normal;margin-left: -30px;">
+        Pink blazer dress from the VERO MODA MARQUEE collection.
+        Designed with 3/4th sleeves and front button closure, and is mini in length. 
+        Suitable for evening or party wear, as well as to a business conference.
+        </pre>
+    </div>
+    
+            
+        
+    </div>
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
